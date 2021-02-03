@@ -1,0 +1,143 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.SelectProjectPopUp" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+    <Dialog contentWidth="100%" horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Projects" type="Standard" verticalScrolling="true">
+        <content>
+            <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar>
+                    <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                        <content>
+                            <Title text="Items (3)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                            <ToolbarSpacer width=""/>
+                            <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                            <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                        </content>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Project Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Project Code" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Project Group" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Project Type" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Address" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Phione" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Contact person" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Active" press="_onRowPress">
+                        <cells>
+                            <ObjectIdentifier title="Aratt Milano" text="" titleActive="false" visible="true"/>
+                            <Text text="Supplier Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="" unit="" emphasized="true" state="None"/>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <ObjectIdentifier title="" text="" titleActive="false" visible="true"/>
+                            <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ObjectNumber number="" unit="" emphasized="true" state="None"/>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                            <layout:HorizontalLayout>
+                                <layout:content/>
+                            </layout:HorizontalLayout>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

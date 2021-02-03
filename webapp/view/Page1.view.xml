@@ -1,0 +1,317 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page1" xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:unified="sap.ui.unified">
+    <tnt:ToolPage sideExpanded="true">
+        <tnt:header>
+            <tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="true" enabled="true">
+                <tnt:content>
+                    <Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+                    <ToolbarSpacer width="20px"/>
+                    <Button text="Save" type="Transparent" icon="sap-icon://save" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                    <Button text="Edit" type="Transparent" icon="sap-icon://edit" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <ToolbarSpacer width=""/>
+                    <ToolbarSpacer width=""/>
+                    <Button text="" type="Emphasized" icon="sap-icon://video" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="www.aratt.in/" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </tnt:content>
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:sideContent>
+            <tnt:SideNavigation visible="true">
+                <tnt:item>
+                    <tnt:NavigationList width="auto" expanded="true">
+                        <tnt:items>
+                            <tnt:NavigationListItem icon="sap-icon://capital-projects" expanded="true" hasExpander="true" text="Project Master" select="_onNavigationListItemSelect">
+                                <tnt:items>
+                                    <tnt:NavigationListItem icon="sap-icon://building" expanded="false" hasExpander="true" text="Project">
+                                        <tnt:items>
+                                            <tnt:NavigationListItem expanded="true" hasExpander="true" text="Text"/>
+                                            <tnt:NavigationListItem expanded="true" hasExpander="true" text="Text"/>
+                                        </tnt:items>
+                                    </tnt:NavigationListItem>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Amenities" select="_onNavigationListItemFirstLevelSelect"/>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Accessibility" select="_onNavigationListItemFirstLevelSelect1"/>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Consultant" select="_onNavigationListItemFirstLevelSelect2"/>
+                                </tnt:items>
+                            </tnt:NavigationListItem>
+                            <tnt:NavigationListItem icon="sap-icon://building" expanded="true" hasExpander="true" text="Unit" select="_onNavigationListItemSelect1">
+                                <tnt:items>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Genearte Unit" select="_onNavigationListItemFirstLevelSelect3"/>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Unit List" select="_onNavigationListItemFirstLevelSelect4"/>
+                                </tnt:items>
+                            </tnt:NavigationListItem>
+                            <tnt:NavigationListItem icon="sap-icon://vehicle-repair" expanded="true" hasExpander="true" text="Parking Slot">
+                                <tnt:items>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Tentative Car Park" select="_onNavigationListItemFirstLevelSelect5"/>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Car Park Numbering" select="_onNavigationListItemFirstLevelSelect6"/>
+                                    <tnt:NavigationListItem expanded="true" hasExpander="true" text="Allotment"/>
+                                </tnt:items>
+                            </tnt:NavigationListItem>
+                        </tnt:items>
+                    </tnt:NavigationList>
+                </tnt:item>
+                <tnt:fixedItem/>
+                <tnt:footer/>
+            </tnt:SideNavigation>
+        </tnt:sideContent>
+        <tnt:mainContents>
+            <layout:BlockLayout background="Default" visible="true" class="sapUiSmallMargin sapUiContentPadding">
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Panel height="auto" width="100%" headerText="Project Details" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <form:Form width="100%" editable="true" visible="true">
+                                                <form:title/>
+                                                <form:formContainers>
+                                                    <form:FormContainer visible="true">
+                                                        <form:formElements>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Project Code" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" showValueHelp="true" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Description" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <TextArea rows="2" cols="20" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Project Group" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                        <items>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                        </items>
+                                                                    </ComboBox>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Project Type" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                        <items>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                        </items>
+                                                                    </ComboBox>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Land Cost" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" description="$" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Govt Rate" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" description="$" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                        </form:formElements>
+                                                        <form:title/>
+                                                    </form:FormContainer>
+                                                </form:formContainers>
+                                                <form:layout>
+                                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                </form:layout>
+                                            </form:Form>
+                                        </content>
+                                    </Panel>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Panel height="auto" width="100%" headerText="Project Upolads" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                                <items>
+                                                    <HBox alignItems="Center" direction="Row" fitContainer="false" width="328px" height="auto" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false" class="sapUiResponsiveMargin">
+                                                        <items>
+                                                            <Image src="/webapp/resources/download.jpg" height="120px" width="120px" visible="true" densityAware="false" press="_onImagePress"/>
+                                                            <unified:FileUploader buttonText="Project" style="Emphasized" icon="" buttonOnly="true" enabled="true" width="auto" iconFirst="true" uploadOnChange="true" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" uploadComplete="_onFileUploaderUploadComplete" change="_onFileUploaderChange" typeMissmatch="_onFileUploaderTypeMissmatch" fileSizeExceed="_onFileUploaderFileSizeExceed">
+                                                                <unified:headerParameters/>
+                                                                <unified:parameters/>
+                                                                <unified:xhrSettings/>
+                                                            </unified:FileUploader>
+                                                            <SegmentedButton width="auto" enabled="true" visible="true">
+                                                                <items>
+                                                                    <SegmentedButtonItem icon="sap-icon://camera" text="" width="auto" enabled="true"/>
+                                                                </items>
+                                                            </SegmentedButton>
+                                                        </items>
+                                                        <layoutData/>
+                                                    </HBox>
+                                                </items>
+                                                <layoutData/>
+                                            </HBox>
+                                            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                                <items>
+                                                    <HBox alignItems="Center" direction="Row" fitContainer="false" width="328px" height="auto" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false" class="sapUiResponsiveMargin">
+                                                        <items>
+                                                            <Image src="/build/uilibraries/content/static/image-canvas.svg" height="120px" width="120px" visible="true" densityAware="false"/>
+                                                            <unified:FileUploader buttonText="Location" style="Emphasized" icon="" buttonOnly="true" enabled="true" width="auto" iconFirst="true" uploadOnChange="true" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" uploadComplete="_onFileUploaderUploadComplete1" change="_onFileUploaderChange1" typeMissmatch="_onFileUploaderTypeMissmatch1" fileSizeExceed="_onFileUploaderFileSizeExceed1">
+                                                                <unified:headerParameters/>
+                                                                <unified:parameters/>
+                                                                <unified:xhrSettings/>
+                                                            </unified:FileUploader>
+                                                        </items>
+                                                        <layoutData/>
+                                                    </HBox>
+                                                </items>
+                                                <layoutData/>
+                                            </HBox>
+                                            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="375.765625px" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                                <items>
+                                                    <HBox alignItems="Center" direction="Row" fitContainer="false" width="328px" height="auto" justifyContent="SpaceAround" renderType="Div" visible="true" displayInline="false" class="sapUiResponsiveMargin">
+                                                        <items>
+                                                            <Image src="/build/uilibraries/content/static/image-canvas.svg" height="120px" width="120px" visible="true" densityAware="false"/>
+                                                            <unified:FileUploader buttonText="Plan" style="Emphasized" icon="" buttonOnly="true" enabled="true" width="auto" iconFirst="true" uploadOnChange="true" maximumFileSize="10" mimeType="image/jpeg,image/gif,image/png,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" uploadComplete="_onFileUploaderUploadComplete2" change="_onFileUploaderChange2" typeMissmatch="_onFileUploaderTypeMissmatch2" fileSizeExceed="_onFileUploaderFileSizeExceed2">
+                                                                <unified:headerParameters/>
+                                                                <unified:parameters/>
+                                                                <unified:xhrSettings/>
+                                                            </unified:FileUploader>
+                                                        </items>
+                                                        <layoutData/>
+                                                    </HBox>
+                                                </items>
+                                                <layoutData/>
+                                            </HBox>
+                                        </content>
+                                    </Panel>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="4" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Panel height="auto" width="100%" headerText="Project Address" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <form:Form width="100%" editable="true" visible="true">
+                                                <form:title/>
+                                                <form:formContainers>
+                                                    <form:FormContainer visible="true">
+                                                        <form:formElements>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Address" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <TextArea rows="2" cols="20" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Country" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                        <items>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                        </items>
+                                                                    </ComboBox>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="State /City" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <ComboBox placeholder="State" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                        <items>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                        </items>
+                                                                    </ComboBox>
+                                                                    <ComboBox placeholder="City" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                        <items>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                                                        </items>
+                                                                    </ComboBox>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                        </form:formElements>
+                                                        <form:title/>
+                                                    </form:FormContainer>
+                                                </form:formContainers>
+                                                <form:layout>
+                                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                </form:layout>
+                                            </form:Form>
+                                        </content>
+                                    </Panel>
+                                    <Panel height="auto" width="100%" headerText="Contact Information" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <form:Form width="100%" editable="true" visible="true">
+                                                <form:title/>
+                                                <form:formContainers>
+                                                    <form:FormContainer visible="true">
+                                                        <form:formElements>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Conatct Person" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Phone" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Email ID" design="Standard" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Link text="alok750anu@gmail.com" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                        </form:formElements>
+                                                        <form:title/>
+                                                    </form:FormContainer>
+                                                </form:formContainers>
+                                                <form:layout>
+                                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                </form:layout>
+                                            </form:Form>
+                                        </content>
+                                    </Panel>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </tnt:mainContents>
+    </tnt:ToolPage>
+</mvc:View>

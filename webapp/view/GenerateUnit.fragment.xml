@@ -1,0 +1,294 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.GenerateUnit" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+    <Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="true" title="Project Unit Gerate" type="Standard" verticalScrolling="true">
+        <content>
+            <layout:BlockLayout background="Default" visible="true">
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Panel height="auto" width="100%" headerText="Unit Name" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <form:Form width="100%" editable="true" visible="true">
+                                                <form:title/>
+                                                <form:formContainers>
+                                                    <form:FormContainer visible="true">
+                                                        <form:formElements>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Unit Prefix/Number" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input placeholder="Unit Number Prefix" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                    <Input placeholder="Number of Units" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                            <form:FormElement visible="true">
+                                                                <form:label>
+                                                                    <Label text="Starting Number" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                </form:label>
+                                                                <form:fields>
+                                                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                                </form:fields>
+                                                            </form:FormElement>
+                                                        </form:formElements>
+                                                        <form:title/>
+                                                    </form:FormContainer>
+                                                </form:formContainers>
+                                                <form:layout>
+                                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                </form:layout>
+                                            </form:Form>
+                                        </content>
+                                    </Panel>
+                                    <Panel height="auto" width="100%" headerText="Unit Details" expandable="true" expanded="true" expandAnimation="true" backgroundDesign="Solid">
+                                        <content>
+                                            <layout:BlockLayout background="Default" visible="true">
+                                                <layout:content>
+                                                    <layout:BlockLayoutRow scrollable="false">
+                                                        <layout:content>
+                                                            <layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                                <layout:content>
+                                                                    <form:Form width="100%" editable="true" visible="true">
+                                                                        <form:title/>
+                                                                        <form:formContainers>
+                                                                            <form:FormContainer visible="true">
+                                                                                <form:formElements>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="Block" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="Floor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="No. of Bedrooms" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                </form:formElements>
+                                                                                <form:title/>
+                                                                            </form:FormContainer>
+                                                                        </form:formContainers>
+                                                                        <form:layout>
+                                                                            <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                                        </form:layout>
+                                                                    </form:Form>
+                                                                </layout:content>
+                                                            </layout:BlockLayoutCell>
+                                                            <layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                                <layout:content>
+                                                                    <form:Form width="100%" editable="true" visible="true">
+                                                                        <form:title/>
+                                                                        <form:formContainers>
+                                                                            <form:FormContainer visible="true">
+                                                                                <form:formElements>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="Unit Type" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="Specialities" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                    <form:FormElement visible="true">
+                                                                                        <form:label>
+                                                                                            <Label text="Room Template" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                                                        </form:label>
+                                                                                        <form:fields>
+                                                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                                                <items>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                                                </items>
+                                                                                            </ComboBox>
+                                                                                        </form:fields>
+                                                                                    </form:FormElement>
+                                                                                </form:formElements>
+                                                                                <form:title/>
+                                                                            </form:FormContainer>
+                                                                        </form:formContainers>
+                                                                        <form:layout>
+                                                                            <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                                                        </form:layout>
+                                                                    </form:Form>
+                                                                </layout:content>
+                                                            </layout:BlockLayoutCell>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutRow>
+                                                </layout:content>
+                                            </layout:BlockLayout>
+                                        </content>
+                                    </Panel>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="2" title="Unit Pricing" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                        <infoToolbar>
+                                            <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <content>
+                                                    <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </content>
+                                            </Toolbar>
+                                        </infoToolbar>
+                                        <headerToolbar/>
+                                        <columns>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Pricing Element" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Area/Qty" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Rate" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Premium Rate Applicable" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Amount" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Cost of Apart,ment" text="" titleActive="false" visible="true"/>
+                                                    <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <ObjectNumber number="3300" unit="INR" emphasized="true" state="None"/>
+                                                    <CheckBox text="" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Amenitiews" text="" titleActive="false" visible="true"/>
+                                                    <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="true" state="None"/>
+                                                    <CheckBox text="" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Car parks" text="" titleActive="false" visible="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="true" state="None"/>
+                                                    <CheckBox text="" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <Title text="Total" titleStyle="H2" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Generate" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+            <Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

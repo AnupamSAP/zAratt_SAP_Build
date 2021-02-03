@@ -1,0 +1,37 @@
+{
+    "dataBinding": {
+        "/webapp/view/Page1.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Page2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/CarParkNumber.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/UnitList.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/TentativeCarPark.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/GenerateUnit.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/SelectProjectPopUp.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Consultant.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/ImageCoursel.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Dialog2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Dialog1.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

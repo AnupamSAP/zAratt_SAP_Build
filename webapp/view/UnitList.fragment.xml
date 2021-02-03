@@ -1,0 +1,229 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.UnitList" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+    <Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="true" title="Project Units" type="Standard" verticalScrolling="true">
+        <content>
+            <layout:BlockLayout background="Default" visible="true">
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <form:Form width="100%" editable="true" visible="true">
+                                        <form:title/>
+                                        <form:formContainers>
+                                            <form:FormContainer visible="true">
+                                                <form:formElements>
+                                                    <form:FormElement visible="true">
+                                                        <form:label>
+                                                            <Label text="Block" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </form:label>
+                                                        <form:fields>
+                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                <items>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                </items>
+                                                            </ComboBox>
+                                                        </form:fields>
+                                                    </form:FormElement>
+                                                </form:formElements>
+                                                <form:title/>
+                                            </form:FormContainer>
+                                        </form:formContainers>
+                                        <form:layout>
+                                            <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                        </form:layout>
+                                    </form:Form>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <form:Form width="100%" editable="true" visible="true">
+                                        <form:title/>
+                                        <form:formContainers>
+                                            <form:FormContainer visible="true">
+                                                <form:formElements>
+                                                    <form:FormElement visible="true">
+                                                        <form:label>
+                                                            <Label text="Unit" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </form:label>
+                                                        <form:fields>
+                                                            <ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                                                <items>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                    <core:Item text="Item" enabled="true" key="Item"/>
+                                                                </items>
+                                                            </ComboBox>
+                                                        </form:fields>
+                                                    </form:FormElement>
+                                                </form:formElements>
+                                                <form:title/>
+                                            </form:FormContainer>
+                                        </form:formContainers>
+                                        <form:layout>
+                                            <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                        </form:layout>
+                                    </form:Form>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell width="4" title="" titleAlignment="Begin" titleLevel="Auto">
+                                <layout:content>
+                                    <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                        <infoToolbar>
+                                            <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <content>
+                                                    <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </content>
+                                            </Toolbar>
+                                        </infoToolbar>
+                                        <headerToolbar>
+                                            <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                                                <content>
+                                                    <Title text="Units Genearted (3)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                                    <ToolbarSpacer width=""/>
+                                                    <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+                                        <columns>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Unit Number" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Floor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Block" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Specialities" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Project Rate Template" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Area" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Amount" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Column Header" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Product Name" text="Product ID" titleActive="false" visible="true"/>
+                                                    <Text text="Supplier Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="true" state="None"/>
+                                                    <core:Icon src="sap-icon://notes" size="48px" height="48px" width="48px" visible="true"/>
+                                                </cells>
+                                            </ColumnListItem>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Product Name" text="Product ID" titleActive="false" visible="true"/>
+                                                    <Text text="Supplier Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="true" state="None"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <ObjectIdentifier title="Product Name" text="Product ID" titleActive="false" visible="true"/>
+                                                    <Text text="Supplier Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="true" state="None"/>
+                                                    <layout:HorizontalLayout>
+                                                        <layout:content/>
+                                                    </layout:HorizontalLayout>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+            <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

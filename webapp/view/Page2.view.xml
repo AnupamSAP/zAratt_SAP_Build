@@ -1,0 +1,13 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page2" xmlns:tnt="sap.tnt" xmlns="sap.m">
+    <tnt:ToolPage sideExpanded="false">
+        <tnt:header>
+            <tnt:ToolHeader height="50px" width="auto" design="Transparent" visible="false" enabled="true">
+                <tnt:content>
+                    <Button text="" type="Default" icon="sap-icon://menu2" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="Toggle Side Navigation" press="_onToggleButtonPress"/>
+                </tnt:content>
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:sideContent/>
+        <tnt:mainContents/>
+    </tnt:ToolPage>
+</mvc:View>
